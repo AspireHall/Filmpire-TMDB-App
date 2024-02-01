@@ -19,7 +19,7 @@ export default makeStyles((theme) => ({
   },
   image: {
     borderRadius: '20px',
-    height: '300px',
+    height: '500px',
     marginBottom: '10px',
     '&:hover': {
       transform: 'scale(1.05)',
