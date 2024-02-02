@@ -26,11 +26,9 @@ export const tmdbApi = createApi({
         if (genreIdOrCategoryName && typeof genreIdOrCategoryName === 'string') {
           return `movie/${genreIdOrCategoryName}?page=${page}&api_key=${tmdbApiKey}`;
         }
-        console.log(genreIdOrCategoryName);
 
         // Get Movies by Genre
         if (genreIdOrCategoryName && typeof genreIdOrCategoryName === 'number') {
-          console.log('HERE');
           return `discover/movie?with_genres=${genreIdOrCategoryName}&page=${page}&api_key=${tmdbApiKey}`;
         }
         // Get Popular Movies
